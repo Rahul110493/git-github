@@ -12,12 +12,11 @@ events.on("push", function(e, project) {
 
   // Now we want it to run these commands in order:
   node.tasks = [
-    
+ 
     "cd /src/app",
     "pip install -r requirements.txt",
     "cd /src/",
-    "python setup.py test",
-    "pwd",
+    "python setup.py test"
   ]
 
   // We're done configuring, so we run the job
